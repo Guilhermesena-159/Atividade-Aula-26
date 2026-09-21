@@ -1,5 +1,5 @@
-Casos de Teste
-O que foi feito
+**Casos de Teste**
+O que foi feito:
 
 Foi criado um arquivo em TypeScript para representar casos de teste de QA.
 
