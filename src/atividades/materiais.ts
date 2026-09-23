@@ -34,6 +34,22 @@ console.log(nomeMateriais);
 console.log(filtrarMateriais);
 console.log(somarPrecoMateriais);
 
+async function buscarMaterial(nome: string) { 
+    await new Promise(function(resolve) { 
+        setTimeout(resolve, 500); 
+    });
+    
+    const material = listadeMateriais.find(function(materiais) { 
+        return materiais.nome === nome; 
+    });
+
+    if (!material) { 
+        throw new Error("Material não encontrado"); 
+    } 
+    return material; 
+} 
+export { listadeMateriais, buscarMaterial };
+
 
 
 
