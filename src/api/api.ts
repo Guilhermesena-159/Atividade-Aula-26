@@ -90,7 +90,7 @@ async function criarPostagem(): Promise<Postagem> {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify('CORPO ENVIADO')
+            body: JSON.stringify(corpoEnviado)
         });
 
         console.log('STATUS:');

@@ -9,11 +9,12 @@
     "start": "node ."
   },
   "devDependencies": {
+    "@rolldown/binding-wasm32-wasi": "^1.2.11",
     "@types/node": "^26.5.0",
     "@types/prompt-sync": "^4.2.3",
     "tsx": "^4.23.13",
     "typescript": "^7.0.2",
-    "vitest": "^5.0.1"
+    "vitest": "^2.1.9"
   },
   "dependencies": {
     "prompt-sync": "^4.2.0"
