@@ -9,7 +9,7 @@ interface Postagem {
 //GET: Busca postagem por id
 async function buscarPostagem(id: number): Promise<Postagem> {
     const res = await fetch(
-        `https://jsonplaceholder.typicode.com/post/${id}/comments`
+        `https://jsonplaceholder.typicode.com/posts/${id}/comments`
     );
 
     const resPost = await res.json() as Promise<Postagem>;
